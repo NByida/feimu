@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/lay_contain"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <include layout="@layout/include_grey_divider_line"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttom_bar_size">
+        <TextView
+            android:id="@+id/tv_home"
+            style="@style/TextView.small.black"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:drawableTop="@mipmap/pic_home"
+            android:button="@android:color/transparent"
+            android:layout_gravity="center"
+            android:text="@string/main_page"
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@mipmap/pic_upload"
+            />
+        <TextView
+            android:id="@+id/tv_mine"
+            android:layout_width="0dp"
+            android:paddingTop="5dp"
+            style="@style/TextView.small.black"
+            android:drawableTop="@mipmap/pic_mine"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:text="@string/mine" />
+    </LinearLayout>
+
+</LinearLayout>
