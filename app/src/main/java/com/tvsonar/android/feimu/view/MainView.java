@@ -53,8 +53,7 @@ public class MainView extends MvpView {
     }
 
     private String createTag(Fragment fragment) {
-        Mlog.t(fragment.getClass().getName());
-        return fragment.getClass().getName();
+        return fragment.getClass().getSimpleName();
     }
 
     private void switchFragment(int toPosition) {

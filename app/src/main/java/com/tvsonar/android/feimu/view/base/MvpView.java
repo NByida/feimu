@@ -205,7 +205,7 @@ public abstract class MvpView implements BaseView {
         T t= (T) manager.findFragmentByTag(tag);
         if(t!=null)return t;
         else {
-            Mlog.t("null");
+            Mlog.e("cannot getFragment"+tag);
             return null;
         }
     }
